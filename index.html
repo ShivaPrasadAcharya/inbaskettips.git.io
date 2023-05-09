@@ -1,0 +1,517 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>InBasket Tips</title>
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=j_amsCpOVA23eiQ5Cgfvcm3GDpIMpCy84qiJBmJE0z8BGql6BR68VLtCNBaEaexjqgK7iOQ0MB4XAs-ZztWVnmLzEvxKjs-IrpiLYaBlYZI" charset="UTF-8"></script><script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=95Is7pcgjZRzW0LtPWu6A6P8SgiWGbf0lGgwC9zGZ-TLQj3Mvk1qjOITXbcsu743SoAORatID_3EH6nYcKKTFfdwYRjJ_mjwGhO99-CJufQ" charset="UTF-8"></script><style>
+    /* set body styles */
+    body {
+      background-color: #ffffff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      font-size: smaller;
+    }
+    /* set form styles */
+    form {
+      margin: 40px auto;
+      max-width: 600px;
+    }
+    label {
+      color: #666666;
+      display: block;
+      font-size: 12px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    input,
+    textarea {
+      border: 2px solid #cccccc;
+      border-radius: 4px;
+      font-size: 12px;
+      padding: 10px;
+      width: 100%;
+    }
+    input:focus,
+    textarea:focus {
+      border-color: #0070f3;
+      box-shadow: 0 0 0 2px rgba(0, 112, 243, 0.5);
+      outline: none;
+    }
+    button {
+      background-color: #0070f3;
+      border: none;
+      border-radius: 4px;
+      color: #ffffff;
+      cursor: pointer;
+      font-size: 12px;
+      margin: 20px 0;
+      padding: 10px 20px;
+      transition: background-color 0.2s;
+    }
+    button:hover {
+      background-color: #0061c9;
+    }
+    #transpose-button {
+      background-color: #b71c1c;
+      margin-right: 10px;
+    }
+    #transpose-button:hover {
+      background-color: #8c1b1b;
+    }
+    #copy-button {
+      background-color: #0070f3;
+      margin-right: 10px;
+    }
+    #copy-button:hover {
+      background-color: #0061c9;
+    }
+    #submit-button {
+      background-color: #1b5e20;
+    }
+    #submit-button:hover {
+      background-color: #0d530d;
+    }
+    /* set code block styles */
+    #code {
+      background-color: #f7f7f7;
+      border-radius: 4px;
+      margin: 40px auto;
+      max-width: 600px;
+      padding: 20px;
+      white-space: pre-wrap;
+    }
+    #code code {
+      font-size: 16px;
+    }
+    #descriptionBox {
+      background-color: yellow;
+      width: fit-content;
+    }
+    #developedby {
+      font-style: italic;
+      color: brown;
+    }
+    .link-container {
+      position: fixed;
+      bottom: 95%;
+      left: 0;
+      right: 0;
+      text-align: bottom;
+    }
+    /* Style for the links */
+    .link-container a {
+      color: rgba(255, 38, 0, 0.971);
+      text-decoration: none;
+      display: inline-block;
+      margin-right: 20px;
+      font-size: normal;
+    }
+    .links {
+      text-align: right;
+    }
+    #searchInput {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      position: fixed;
+    }
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+    }
+    /* Style the select box */
+    select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: none;
+      background-color: #f1f1f1;
+    }
+    /* Style the options */
+    option {
+      background-color: #f1f1f1;
+      color: black;
+    }
+    /* Style the selected option */
+    option:checked {
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <div class="links">
+      <a href="https://shivaprasadacharya.github.io/webpagewithforms.git.io/" target="_blank">Webpage with Forms</a>
+    </div>
+    <a id="TOP"></a><label for="descriptionBox">ParkingText</label>
+    <textarea id="descriptionBox" placeholder="Park your text here"></textarea><br>
+    <label for="h3-input">ID </label>
+    <input type="text" id="h3-input" placeholder="Enter id "><br>
+    <br>
+    <label for="h4-input">पत्रको मजबुन</label>
+    <textarea id="h4-input" placeholder="Enter सम्पादन गरिने कार्य"></textarea>
+    <br>
+    <label for="h5-input">सम्पादन गरिने कार्यको वर्गीकरण</label>
+    <select id="h5-input" name="items" placeholder="Choose one of the options">
+      <option value="">Select an item...</option>
+      <option value="nil">nil</option>
+      <option value="तुरन्तै">तुरन्तै</option>
+      <option value="अति जरूरी">अति जरूरी</option>
+      <option value="जरूरी">जरूरी</option>
+      <option value="साधारण">साधारण</option>
+    </select>
+    <br>
+    <label for="h6-input">Key Action</label>
+    <textarea id="h6-input" placeholder="गरिनुपर्ने मुख्य कार्यहरू"></textarea>
+    <br>
+    <label for="h7-input">Justification
+    </label>
+    <textarea id="h7-input" placeholder="तोकिएको प्राथमिकीकरणमा पर्नुको पुष्ट्याई"></textarea>
+    <label for="h8-input">Keywords</label>
+    <textarea id="h8-input" placeholder="Enter your keywords here"></textarea>
+    <br>
+    <a id="MIDDLE"></a>
+    <button type="button" id="transpose-button">Transpose</button>
+    <button type="button" id="copy-button">Copy to Clipboard</button>
+    <button type="button" id="submit-button">Submit</button>
+    <button type="button" id="download-button">Download Text</button>
+  </form>
+  <div id="code"> </div>
+  <script>
+    const h3Input = document.getElementById("h3-input");
+    const h3Element = document.getElementById("h3-element");
+    const h4Input = document.getElementById("h4-input");
+    const h4Element = document.getElementById("h4-element");
+    const h5Input = document.getElementById("h5-input");
+    const h5Element = document.getElementById("h5-element");
+    const h6Input = document.getElementById("h6-input");
+    const h6Element = document.getElementById("h6-element");
+    const h7Input = document.getElementById("h7-input");
+    const h7Element = document.getElementById("h7-element");
+    const h8Input = document.getElementById("h8-input");
+    const h8Element = document.getElementById("h8-element");
+    const copyButton = document.getElementById("copy-button");
+    const generateButton = document.getElementById("submit-button");
+    generateButton.addEventListener("click", () => {
+      const codeElement = document.getElementById("code");
+      codeElement.innerHTML = `<code>&#x003C;table&#x003E;&#x003C;tr&#x003E;&#x003C;td&#x003E;${h3Input.value}&#x003C;/td&#x003E;&#x003C;td&#x003E;${h4Input.value}&#x003C;/td&#x003E;&#x003C;td&#x003E;${h5Input.value}&#x003C;/td&#x003E;&#x003C;td&#x003E;${h6Input.value}&#x003C;/td&#x003E;&#x003C;td&#x003E;${h7Input.value}&#x003C;/td&#x003E;&#x003C;td&#x003E;${h8Input.value}&#x003C;/td&#x003E;&#x003C;/tr&#x003E;&#x003C;/table&#x003E;</code>`;
+      // Hide all tables except for the one with the matching ID
+      const parkingSection = document.getElementById("parkingsection");
+      const rows = parkingSection.getElementsByTagName("tr");
+      for (let i = 0; i < rows.length; i++) {
+        const cells = rows[i].getElementsByTagName("td");
+        if (cells[0].innerText === h3Input.value) {
+          rows[i].style.display = "table-row";
+        } else {
+          rows[i].style.display = "none";
+        }
+      }
+    });
+    //aUTOFILL SCRIPT//
+    h3Input.addEventListener("input", () => {
+      const parkingSection = document.getElementById("parkingsection");
+      const rows = parkingSection.getElementsByTagName("tr");
+      let found = false;
+      for (let i = 0; i < rows.length; i++) {
+        const cells = rows[i].getElementsByTagName("td");
+        if (cells[0].innerText === h3Input.value) {
+          found = true;
+          for (let j = 0; j < 5; j++) {
+            [h4Input, h5Input, h6Input, h7Input, h8Input][j].value = cells[j + 1].innerHTML.replace(/</g, "&#x003C;").replace(/>/g, "&#x003E;");
+          }
+          //h3Input.style.color = "green"; // set text color to green for auto-populated value
+          //break;
+        }
+      }
+      if (found) {
+        h3Input.style.backgroundColor = "green";
+        h4Input.style.color = "black";
+        h5Input.style.color = "black";
+        h6Input.style.color = "black";
+        h7Input.style.color = "black";
+        h8Input.style.color = "black";
+      } else {
+        h3Input.style.backgroundColor = "orange";
+        h4Input.style.color = "brown";
+        h5Input.style.color = "brown";
+        h6Input.style.color = "brown";
+        h7Input.style.color = "brown";
+        h8Input.style.color = "brown";
+      }
+    });
+    //Hide//
+    function hideRows() {
+      const parkingSection = document.getElementById("parkingsection");
+      const rows = parkingSection.getElementsByTagName("tr");
+      for (let i = 0; i < rows.length; i++) {
+        const cells = rows[i].getElementsByTagName("td");
+        if (cells[0].innerText !== h3Input.value) {
+          rows[i].style.display = "none";
+        }
+      }
+    }
+    //copyscript//
+    copyButton.addEventListener("click", () => {
+      const codeElement = document.getElementById("code");
+      const text = codeElement.innerText;
+      navigator.clipboard.writeText(text);
+      alert("Copied to clipboard!");
+    });
+    const transposeButton = document.getElementById("transpose-button");
+    transposeButton.addEventListener("click", () => {
+      // Get the currently filtered table
+      const parkingSection = document.getElementById("parkingsection");
+      const rows = parkingSection.getElementsByTagName("tr");
+      let filteredTable = null;
+      for (let i = 0; i < rows.length; i++) {
+        const cells = rows[i].getElementsByTagName("td");
+        if (cells[0].innerText === h3Input.value) {
+          filteredTable = rows[i].parentNode;
+          break;
+        }
+      }
+      if (!filteredTable) {
+        // No matching table found, do nothing
+        return;
+      }
+      // Transpose the filtered table
+      const rowsArray = Array.from(filteredTable.rows);
+      const columnsArray = rowsArray[0].cells.length > 1 ? Array.from(rowsArray[0].cells) : [rowsArray[0]];
+      const newTable = document.createElement("table");
+      for (let j = 0; j < columnsArray.length; j++) {
+        const newRow = document.createElement("tr");
+        for (let i = 0; i < rowsArray.length; i++) {
+          const newCell = document.createElement("td");
+          const cellHtml = rowsArray[i].cells[j].innerHTML; // get the HTML content of the cell
+          newCell.innerHTML = cellHtml; // set the HTML content of the new cell
+          newRow.appendChild(newCell);
+        }
+        newTable.appendChild(newRow);
+      }
+      // Replace the filtered table with the transposed table
+      filteredTable.parentNode.insertBefore(newTable, filteredTable);
+      filteredTable.parentNode.removeChild(filteredTable);
+    });
+    function addLineBreakAndBold(inputElement) {
+      inputElement.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          const cursorPosition = inputElement.selectionStart;
+          inputElement.value =
+            inputElement.value.substring(0, cursorPosition) +
+            "&#x003C;br&#x003E; " +
+            inputElement.value.substring(cursorPosition);
+        } else if (event.ctrlKey && event.key === "b") {
+          event.preventDefault();
+          const cursorPosition = inputElement.selectionStart;
+          inputElement.value =
+            inputElement.value.substring(0, cursorPosition) +
+            "&#x003C;b&#x003E;  &#x003C;/b&#x003E; " +
+            inputElement.value.substring(cursorPosition);
+          inputElement.setSelectionRange(cursorPosition + 18, cursorPosition + 18); // Place the cursor inside the <b> tag
+        } else if (event.ctrlKey && event.key === "u") {
+          event.preventDefault();
+          const cursorPosition = inputElement.selectionStart;
+          inputElement.value =
+            inputElement.value.substring(0, cursorPosition) +
+            "&#x003C;u&#x003E; &#x003C;/u&#x003E; " +
+            inputElement.value.substring(cursorPosition);
+          inputElement.setSelectionRange(cursorPosition + 18, cursorPosition + 18); // Place the cursor inside the <u> tag
+        } else if (event.ctrlKey && event.key === 'l') {
+          event.preventDefault();
+          const cursorPosition = inputElement.selectionStart;
+          inputElement.value =
+            inputElement.value.substring(0, cursorPosition) +
+            "&#x003C;a href=&quot;&quot; target=&quot;&#x5F;&#x62;&#x6C;&#x61;&#x6E;&#x6B;&quot;&#x003E;&#x003C;/a&#x003E;" +
+            inputElement.value.substring(cursorPosition);
+          inputElement.setSelectionRange(cursorPosition + 21, cursorPosition + 21); // Place the cursor inside the href
+        } else if (event.ctrlKey && event.key === 'i') {
+          event.preventDefault();
+          const cursorPosition = inputElement.selectionStart;
+          inputElement.value =
+            inputElement.value.substring(0, cursorPosition) +
+            "&#x003C;i&#x003E; &#x003C;/i&#x003E;" +
+            inputElement.value.substring(cursorPosition);
+          inputElement.setSelectionRange(cursorPosition + 18, cursorPosition + 18); // Place the cursor inside the i
+        } else if (event.ctrlKey && event.key === '0') {
+          event.preventDefault();
+          const cursorPosition = inputElement.selectionStart;
+          inputElement.value =
+            inputElement.value.substring(0, cursorPosition) +
+            "&#x003C; &#x003E;" +
+            inputElement.value.substring(cursorPosition);
+          inputElement.setSelectionRange(cursorPosition + 8, cursorPosition + 8); // Place the cursor inside the tag
+        } else if (event.ctrlKey && event.key === '1') {
+          event.preventDefault();
+          const cursorPosition = inputElement.selectionStart;
+          inputElement.value =
+            inputElement.value.substring(0, cursorPosition) +
+            "&#x003C;/ &#x003E;" +
+            inputElement.value.substring(cursorPosition);
+          inputElement.setSelectionRange(cursorPosition + 9, cursorPosition + 9); // Place the cursor inside the tag
+        }
+        else if (event.ctrlKey && event.key === " ") { // Ctrl+Space
+          event.preventDefault();
+          const cursorPosition = inputElement.selectionStart;
+          inputElement.value =
+            inputElement.value.substring(0, cursorPosition) +
+            "&#x003C;b&#x003E;&#x003C;u&#x003E; &#x003C;/u&#x003E;&#x003C;/b&#x003E; " +
+            inputElement.value.substring(cursorPosition);
+          inputElement.setSelectionRange(cursorPosition + 35, cursorPosition + 35); // Place the cursor inside the <u> tag
+        }
+      });
+    }
+    addLineBreakAndBold(h4Input);
+    addLineBreakAndBold(h5Input);
+    addLineBreakAndBold(h6Input);
+    addLineBreakAndBold(h7Input);
+    addLineBreakAndBold(h8Input);
+    //download as .text//
+    const downloadButton = document.getElementById("download-button");
+    downloadButton.addEventListener("click", () => {
+      // Get the table HTML code
+      const tableCode = document.getElementById("code").textContent;
+      // Create a blob from the table code
+      const blob = new Blob([tableCode], { type: "text/plain" });
+      // Create a URL for the blob
+      const url = URL.createObjectURL(blob);
+      // Create a download link
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "inbasket.txt";
+      // Click the link to start the download
+      link.click();
+      // Remove the link and blob
+      link.remove();
+      URL.revokeObjectURL(url);
+    });
+    //Search fuction script//
+    function searchFunction() {
+      var input, filter, tables, rows, cells, i, j, k, txtValue, match;
+      input = document.getElementById("search");
+      filter = input.value.toUpperCase();
+      tables = document.getElementsByTagName("table");
+      for (i = 0; i < tables.length; i++) {
+        rows = tables[i].getElementsByTagName("tr");
+        for (j = 0; j < rows.length; j++) {
+          cells = rows[j].getElementsByTagName("td");
+          match = false;
+          for (k = 0; k < cells.length; k++) {
+            txtValue = cells[k].textContent || cells[k].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              rows[j].style.display = "";
+              match = true;
+              cells[k].innerHTML = txtValue.replace(new RegExp(filter, "gi"), function (match) {
+                return "<mark>" + match + "</mark>";
+              });
+            } else {
+              cells[k].innerHTML = txtValue;
+            }
+          }
+          if (!match) {
+            rows[j].style.display = "none";
+          }
+        }
+      }
+    }
+  </script>
+  <section id="parkingsection">
+
+    <table>
+      <tr><td>01</td><td><b><u>प्रश्न नं. १- पत्रको मजबुनः</u></b> तपाई <u>जिल्ला अदालत बागलुङको श्रेस्तेदार</u>  पदमा कार्यरत हुनुहुन्छ। तपाईलको कार्यालयमा दर्ता शाखा, मुद्दा शाखा, तहसिल शाखा, अभिलेख शाखा लगायतका शाखाहरु रहेको छन। तपाईको कार्यालयमा ३ जना न्यायाधिस, १ श्रेस्तेदार, ३ इजलास अधिकृत, १ तहसिलदार, ४ नायव सुव्वा, ३ तामेलदारको दरवन्दी रहेको भएतापनि १ जना न्यायाधीस, १ इजलास अधिकृतको दरवन्दी रिक्त छ भने तहसिलदार ७ दिनको लागी विदामा जानुभएको छ। आज मिति २०७२।१२।२८ गते १० बजेर १५ मिनेटमा कार्यालय पुग्दा तपाइको टेवलमा १० वटा कामहरु राखिएको छ। ती कामहरुलाई प्राथमिकता निर्धारण गरी गर्नुपर्ने कार्य र प्राथमिकता निर्धारणका कारणहरु पहिचान गर्नुहोस।<br> <br> १. उच्च अदालतवाट निरिक्षणको लागी भोली २ वजे मुख्य न्यायाधीश आउनुहुने भनि उच्च अदालत, पोखरा बागलुङ इजलासको पत्र।<br> २. एक जना कार्यालय सहयोगी मादक पदार्थ सेवन गरी कार्यालय आएको भनि प्रशासन शाखाको नायव सुव्वा तपाई समक्ष आउनुभएको।<br> ३. आफुलाई लागु औषध मुद्दामा लागेको जरिवाना बुझाउन भनि सेवाग्राही निवेदन सहित उपस्थित भएका।<br> ४. बागलुङ नगरपालिकाले दिशामुक्त क्षेत्र घोषणा कार्यक्रमा अतिथिको रुपमा मिति २०७१।१२।२९ गते ११ बजे नगरपालिकाको सभाहलमा उपस्थितको लागी पत्र पठाएको।<br> ५. सम्वन्ध विच्छेदको फिराद पत्रको साथ एकजना महिला उपस्थित हुनुभएको। <br> ६. कानुनको विवादमा परेका बालक लिएर म्याद थपको जिल्ला प्रहरी कार्यालय बागलुङबाट सादा पोशाक सहित प्रहरी आईपुगेको।<br> ७. सर्वोच्च अदालतले २ वर्ष भन्दा बढी अबधि नाघेको मुद्दा हरुको अभिलेख ७ दिन भित्र पठाउन भनि मिति २०७९।१२।१५ गते लेखेको पत्र।<br> ८. सरकारी वकिल कार्यालवाट सार्वजनिक अपराध मुद्दाको अभियोगपत्र सहित कार्यालय सहयोगी आईपुगेको। <br> ९. तपाईको साथी बुर्तिबांग बाट आईपुगेको र जरुरि काम परेकोले आज ३ बजेभित्र भेट्नुपर्ने भनि फोन गरेको।<br> १०. कार्यालयमा २ बजेर ३० मिनेटमा स्टाफ मिटिङ भनि तपाईको सूचना पाटिमा लेखिएको।<br></td><td>nil</td><td>nil</td><td>nil</td><td>/exercise/ <br></td></tr>
+     <tr><td>02</td><td><b><u>प्रश्न नं. २- पत्रको मजबुनः</u></b> तपाई <u> उच्च सरकारी वकिल कार्यालय, विराटनगरको उपन्यायाधिवक्ता</u> पदमा कार्यरत हुनुहुन्छ। उक्त कार्यालयमा १ सहन्यायाधिवक्ता, २ उपन्यायाधिवक्ता र ४ जना सहायक न्यायाधिवक्ताको दरवन्दि रहेको भएतापनि १ जना उपन्यायाधिवक्ता र २ जना सहायक न्यायाधिवक्ताको दरवन्दी रिक्त रहेको छ भने सह न्यायाधिवक्ता ७ दिनको लागि बिदामा हुनुहुन्छ। तपाईको कार्यालयमा प्रशासन शाखा, दर्ता शाखा, मुद्दा शाखा, सुचनाप्रविधि शाखा लगायतका शाखाहरु रहेका छन। तपाईलाई प्रशासन शाखा र मुद्दा शाखा तोकिएको भएतापनि उक्त दिन कार्यालय प्रमुखको जिम्मेवारी समेत आईपरेको छ। आज मिति २०७१।१२।२९ गते १० बजेर २५ मिनेटमा कार्यालय पुग्दा तपाइको टेवलमा १० वटा कामहरु राखिएको छ। ती कामहरुलाई प्राथमिकता निर्धारण गरी गर्नुपर्ने कार्य र प्राथमिकता निर्धारणका कारणहरु पहिचान गर्नुहोस।<br> <br> १. जिल्ला सरकारी वकिल कार्यालय, झापाबाट मिति २०७९।११।२७ गते वुझेको कानुनको बिबादमा परेको बालवालिका संलग्न मुद्दाको फैसलाको पुनरावेदन मस्यौदा,<br>  २. मातहत जिल्ला सरकारी वकील कार्यालयहरुबाट कर्मचारी पदपुर्ति नहुदा कार्यसम्पादनमा समस्या परेको भनि सरुवा गरिदिन भनि गुनासो आएको।<br> ३. आजको पेशीको १० वटा मिसिल तपाईको टेवलमा राखिएको।<br> ४. भवन निर्माणमा भुक्तानिको लागी निर्माण व्यवसायी कार्यसम्पन्न प्रतिवेदन र पत्र सहित उपस्थित भएको।<br> ५. समुदायमा सरकारी वकिल कार्यक्रम आज ३ बजेर ३० मिनेटमा तोकिएको।<br> ६. नायब महान्यायाधिवक्ता ज्यु निजि भ्रमणमा ताप्लेजुङ जान लाग्नुभएको र विराटनगरमा ४ वजे पुग्ने भएकोले स्वागत गर्न आउनु भनि निजि सचिवले फोन सम्पर्क गरेको।<br>  ७. बिराटनगर महानगरपालिकाले मिति २०७२।१२।३० गते ४ वजे नयाँ बर्षको शुभकामना आदानप्रदान कार्यक्रमको लागी निमन्त्रणा पठाएको। <br> ८. कम्युटर अपरेटरको सरुवा भएको र रमाना लिनको लागी रमाना पत्र सहित अगाडि उभिएको।<br> ९. महान्यायाधिवक्ता कार्यालयले मिति २०८०।०१।४ गते देखि शुरु हुने तालिमको लागी एकजना सहायक न्यायाधिबक्ता पठाईदिने भन्ने पत्र।<br> १०. जिल्ला प्रशासन कार्यालयले कानुनी राय माग गरि मिति २०७२।१२।२७ मा लेखिएको पत्र।<br> </td><td>nil</td><td>nil</td><td>nil</td><td>/exercise/<br></td></tr>
+    <tr><td>03</td><td><b><u> प्रश्न नं. ३- पत्रको मजबुनः</u></b> तपाई रामप्रसाद पौडेल आज मिति २०७९।२।२० गते बिहान १० बजे <u> सुर्योदय नगरपालिकामा प्रमुख प्रशासकीय अधिकृत</u>को रूपमा हाजीर भई आफ्नो कार्यजिम्मेवारी शुरु गर्दै हुनुहुन्छ। नगर प्रमुख उपप्रमुख कार्यपालिका सदस्यहरु सहितको नगर कार्यपालिकाले तपाईलाई कार्यालयमा स्वागत गरेको छ। तपाई मातहत लेखा शाखा, योजना शाखा लगायत वटा शाखाहरु रहेका छन्। योजना शाखामा कर्मचारी रिक्त रहेकोले प्रशासन शाखाको नायव सुब्बाले नै सो जिम्मेवारी निर्वाह गर्दै आएका छन्। नगरपालिकाका १० वडाहरुमध्ये २ वटा वडामा वडा सचिव पद रिक्त रहेको छ। आज तपाई कार्यालयमा जिम्मेवारी सम्हाल्दै गर्दा तपाईको टेबुलमा निम्नलिखित विषयका कामहरू रहेका छन्। दिईएका कामहरुलाई वर्गीकरण र प्राथमिकीकरण गर्दै गर्नुपर्ने मुख्य काम र तोकिएको प्राथमिकतामा पर्नुको पुष्ट्याई समेत उल्लेख गर्नुहोस्।<br> <br>१.  संघीय मामिला तथा सामान्य प्रशासन मन्त्रालयले चालु आर्थिक वर्षको हालसम्मको अवधीमा सम्पन्न भएका योजनाहरुको विवरण १५ दिनभित्र मन्त्रालयमा पठाउन अनुरोध गर्दै पत्र पठाएको पत्र लेखिएको मिति २०७९।२।१० कार्यालयमा दर्ता मिति २०७९।२।१८ <br>  २. खानेपानी आयोजनाको उपभोक्ता समिति गठनमा एउटा राजनीतिक दलले मात्र मनोमानी गरेको हुनाले सो उपभोक्ता समिति खारेज गरिपाउँ भनी असन्तुष्ट समूहले १०० जना उपभोक्ताहरुको हस्ताक्षरसहित ज्ञापन पत्र बुझाएको। नगरप्रमुखले ३ दिनभित्र सत्यतथ्य पत्ता लगाई आवश्यक कारवाही चाल्नु भनी मिति २०७९।२।१९ मा तोक लगाएका। <br> ३. प्रदेश नं १ को सामाजिक विकास मन्त्रालयबाट नगरपालिका भित्रमा वितरण गरिएको राहतको विवरण ७ दिनभित्र पठाउन अनुरोध गर्दै ईमेल प्राप्त भएको ईमेत प्राप्त मिति २०७९।२।१७ र सोही दिन दर्ता भएको।<br> ४. जिल्ला प्रशासन कार्यालयबाट मिति २०७९।२।२० गते दिउँसो २ बजे प्रकोप व्यवस्थापन सम्बन्धी जिल्ला प्रशासन कार्यालयमा हुने बैठकमा अनिवार्य रूपमा उपस्थित हुने पत्र प्राप्त भएको।<br> ५. नेपाल रेडक्रस सोसाईटी सुर्योदय शाखाद्वारा मिति २०७९।२।२१ गते नगरपालिकाको झाडापखाला ग्रस्त क्षेत्रमा आयोजना गरिएको महामारी रोकथाम सम्बन्धी सचेतना कार्यक्रममा प्रमुख अतिथीको रुपमा उपस्थित हुन अनुरोध गर्दै लेखिएको पत्र कार्यालयमा प्राप्त भएको।<br> ६. प्रदेश नं १ को पर्यटन मन्त्रालयले आगामी आर्थिक बर्षमा नगरपालिका क्षेत्रभित्र पर्यटकीय पूर्वाधार विकासका लागि २ करोडसम्मको योजना छनोट गरी जेठ मसान्तभित्र मन्त्रालयमा पठाउन अनुरोध गर्दै लेखेको पत्र कार्यालयमा दर्ता भएको।<br> ७. कान्छा काकालाई हृदयघात भएर बि एण्ड सी अस्पतालमा भर्ना गरिएको हुनाले आवश्यक रकम सहित अस्पतालमा उपस्थित हुन भाईले फोन गरेको।<br>  ८. न्यायिक समितिको बैठक २ महिनादेखि बस्न नसकेको कारणले ३० वटा उजुरीहरु फछ्रयौट हुन नसकेको। उपप्रमुखले मिति २०७९।२।२० गते बैठक राख्नुभएको छ।<br>  ९. आगामी आर्थिक वर्षको योजना तर्जुमाका लागि वडास्तरीय बैठक जेठ मसान्तभित्र सक्नेगरी वार्षिक नीति तथा कार्यक्रममा उल्लेख भएको भएतापनी योजना शाखा रिक्त रहेको कारणले हालसम्म एउटा पनि वडास्तरीय बैठक बस्न नसकेको जानकारी प्राप्त भएको। <br> १०. वडा नं १० को ५०० मिटर सडक कालोपत्रे भईसकेको हुनाले सोको अनुगमन गरी भुक्तानी प्रक्रिया अघि बढाईदिन अनुरोध गर्दै मिति २०७९।२।१ गते निवेदन दर्ता भएकोमा हालसम्म अनुगमन नै हुन नसकेको।<br> </td><td>nil</td><td>nil</td><td>nil</td><td>/exercise/<br></td></tr>
+     <tr><td>04</td><td><b><u> प्रश्न नं. ४- पत्रको मजबुनः </u></b> आज २०७८ साल बैशाख ६ गते हो। तपाई <u> वैदेशिक रोजगार प्रबर्द्धन बोर्डमा वैदेशिक रोजगार प्रबर्द्धन शाखामा निर्देशक </u> पदमा कार्यरत हुनुहन्छ। तपाईको सरुवा २ महिना अघि नै भैरहवाको कुनै एक कार्यालयबाट बोर्डमा भएको तर तपाईको ठाउँमा सरुवा भई जाने व्यक्ति वैदेशिक अध्ययन भ्रमणमा गएकाले तपाईलाई तपाई कार्यरत रहेको निकायले उक्त व्यक्ति हाजीर हुन नआइन्जेल कार्यालय छोड्ने अनुमति नदिएका कारण तपाई २ महिना ढिलो गरी हाजीर हुन आउनुभएको छ। तपाई हाजीर हुन नआउनुभएको अवधिमा बोर्डको प्रशासन शाखा हेर्ने उपसचिवलाई तपाईको शाखाको काम गर्ने जिम्मेवारी समेत दिइएको थियो तर दोहोरो जिम्मेवारी कारण शाखाको काम चुस्त हुन सकेन र कामहरु पेन्डिड. अवस्थामा छन्। शाखामा २ जना शाखा अधिकृतको दरबन्दी भए पनि शाखाको काम एकदमै झण्झटिलो र अपजस मात्र आउने खालको भएकाले एकजना शाखा अधिकृत भीमप्रसाद शर्मा सरुवा मागेर अन्यत्रै गइसके। शाखामा १ जना ना.सु. र १ जना कम्प्युटर अपरेटर मात्र छन्। यहाँको कार्य वातावरण राम्रो छैन त्यसैले आफूले पनि सरुवा हुन चाहेको र मातहतका कर्मचारीहरु पनि अटेरी रहेका सम्पूर्ण बृत्तान्त तपाई हाजीर भएकै दिन शाखा अधिकृतले तपाइलाई सुनाइसकेका छन्। शाखामा दरबन्दी अनुसार कर्मचारीहरु नभएको र तपाई पनि हाजीर हुन ढिलो आएको कारण समयमै सेवा पाउन नसकेको भनेर सेवाग्राहीहरु तपाई हाजीर भएको थाहा पाएपछि शाखामा आएर आक्रोश पोखेको स्थिति छ। आफ्नो काम अहिले नै नभए जे पनि गर्न सक्ने भनिरहेका छन्। तपाई हिजोमात्र करीब ४ बजेतिर मात्र कार्यालयमा हाजीर हुनुभएको हो। तपाइको टेबलमा १० वटा फाइलहरु तपाइकै प्रतिक्षामा छन्। तपाई हाजीर हुनासाथ हिजो नै महानिर्देशकले ती फाइलहरु छिटोभन्दा कार्यसम्पादन गर्नु समेत भनिसकेका छन्। तपाइको टेबलमा भएका १० वटा निम्न विषयहरुका फाइल रहेका छन्।<br> <br>  १. वैदेशिक रोजगारीमा गएको आफ्नो श्रीमानको १ महिना अघि मृत्य भएको र लाश बभी धार्मिक परम्परा अनसार सदगद गरी काजक्रिया समेत गरी श्रीमानको बीमा बापतको रकम माग गर्दा वीमाको कागज नभएका कारण रकम नपाएको, उक्त रकम तरुन्त पाउन सोममायाको निवेदन २०७८।१२।२६ २. वैदेशिक रोजगारीमा ओमान गएकी श्रीमतीले मेरो ज्यान खतरामा छ, मलाई बचाउ भनेर हिजो रातीमात्र फोन गरेको र सो पछि सम्पर्क समेत नभएकोले उनको जीवनरक्षा गरिदिन राम बहादरको निवेदन। १।६<br> ३. कतारमा काम गर्न गएको परिवारको सदस्यको लाश बझ्न TIA मा आज १०:१५ मा जान भनी बोर्डले भने अनसार गएकामा खोली हेर्दा अर्कैको लाश देखी आक्रोशित भई झडप समेत भएको कसैले टेलिफोन बाट जानकारी गराएको। समय १०:३०<br> ४. वैदेशिक रोजगारीका लागि म्यानपावर कम्पनीले भिसा लगाइदिने भनी एक लाखका दरले हामीबाट पैसा लगिसकेको तर बिगत २ हप्ता देखि अफिस बन्द गरी भागेकोले उसलाई खोजीपाउँ भनी एक हल नारा लगाउँदै धर्नामा, समय ११:००<br> ५. निवेदकले छानबिन गरीपाउँ भनी अदुअआ मा हालेको निवेदन उपर ७ दिन भित्र जवाफ पठाउनु भन्ने पत्र। मिति २०७७।१२।२८ दर्ता २०७८।१।१ <br> ६. शाखासँग सम्बन्धित विषयमा मन्त्रीको अध्यक्षतामा २०७८।१।७ गते दिनको १ बजे बैठक राख्न भन्ने सहसचिवको तोक आदेश लागेको पत्र। मिति २०७८|१|४<br> ७. सम्बन्धित मन्त्रीको उपस्थिति रहने वैदेशिक रोजगार ब्यवसायीहरुको कार्यक्रममा तपाइलाई उपस्थित हन भन्ने तोक आदेश लागेको पत्र। २०७८।१।७ स्थान वानेश्वर दिनको ५ बजे<br> ८. तपाई कार्यरत शाखाकै उपसचिव पदेन सदस्य रहने समितिको वैठक २०७८।१।७ स्थान धुलीखेल दिनको ५ बजे<br> ९. शाखासँग सम्बन्धित विषयमा सचिवस्तर बाट निर्णय भइसकेको फाइल निर्णय मिति २०७८।१।६<br> १०.मन्त्रालयबाट २०७० चैत्र मसान्त सम्मको प्रगति विवरण पठाउन भन्ने २०७८।१।३ को पत्र।<br> <br> </td><td>nil</td><td>nil</td><td>nil</td><td>/exercise/<br></td></tr>
+    <tr><td>05</td><td><b><u> प्रश्न नं. ५- पत्रको मजबुनः</u></b> तपाईं श्रीराम केसी <u>संघीय मामिला तथा सामान्य प्रशासन मन्त्रालय संघीय तथा प्रादेशिक कर्मचारी प्रशासन शाखाको शाखा प्रमुख</u>का  रूपमा कार्यरत हुनुहुन्छ तपाई मातहत शाखा अधिकृत २ जना नायव सुव्वा ३ जना कम्प्युटर अपरेटर २ जना र कार्यालय सहयोगी ९ जना समेतको दरबन्दी रहेको र सबै पदहरुमा पदपूर्ति भएको अवस्था छ। शाखामा रही नेपाल सरकारका बिभीन्न मन्त्रालय, निकायमा कार्यरत नेपाल प्रशासन सेवाका नायव सुव्वा वा सो सरहका कर्मचारीहरुको अन्तर मन्त्रालय, निकाय सरूवा काज कामकाजमा खटाउनसक्ने अधिकार श्रीमान् सचिव ज्यूबाट तपाईलाई प्रत्यायोजन गरिएको छ। शाखा अधिकृत र सोभन्दा माथीका कर्मचारीहरुको सरुवा सहमति र सरुवा निवेदन छानविन गरी सहसचिव ज्यू समक्ष पेश गर्ने तथा लोक सेवा आयोगबाट खुल्लातर्फ सिफारिस भई आएका नेपाल प्रशासन सेवाका अधिकृतस्तरका कर्मचारीहरुको शपथ ग्रहण र नियुक्तिका लागि पेश गर्ने जिम्मेवारी समेत यही शाखाको रहेको छ। मातहतका कर्मचारीहरुलाई शाखाको कामको सिलसिलामा ७ दिनसम्म काजमा खटाउने र ७ दिन सम्मको बिदा स्विकृत गर्ने तथा शाखाको स्विकृत बार्षिक कार्यक्रम अन्र्तगत रु २ लाख सम्मको भूक्तानी गर्नसक्ने अधिकार समेत शाखा प्रमुखलाई प्रत्यायोजित भएको छ। आज मिति २०७९।२।१० गते तपाई कार्यालयमा जिम्मेवारी सम्हाल्दै गर्दा तपाईंको टेबुलमा निम्नलिखित विषयका कामहरु रहेका छन्। दिईएका कामहरुलाई वर्गीकरण र प्राथमिकीकरण गर्दै गर्नुपर्ने मुख्य काम र तोकिएको प्राथमिकतामा पर्नुको पुष्ट्याई समेत उल्लेख गर्नुहोस्।<br> <br> १. नायव सुब्बा राजकुमार खत्रीले हाल आफू हुलाक सेवा विभागमा सेवारत रहेको २ बर्षभन्दा बढी अवधी भएको, पोखरा घरमा बृद्ध बुवाआमाको हेरचाह समेत गर्नुपर्ने भई जिल्ला प्रशासन कार्यालय कास्कीमा रिक्त रहेको ना सुपदमा सरुवा गरीपाउँ भनी मन्त्रालयलाई सम्बोधन गरी मिति २०७९।२।१ गते दिनुभएको निवेदन।<br>  २. लोक सेवा आयोगबाट संचालित खुल्ला प्रतियोगितात्मक परीक्षाबाट छनौट भएका नेपाल प्रशासन सेवा, सामान्य प्रशासन समूहका ३२ जना शाखा अधिकृतहरुको लोक सेवा आयोगको पत्रसाथको मिति २०७९।२।१० गतेको सिफारिस पत्र प्राप्त भएको। <br> ३. वातावरण बिभागमा कार्यरत नेपाल प्रशासन सेवा, रा.प. प्रथम श्रेणीका महानिर्देशकको अवधी नपुग्दै सरुवा गर्नका लागि सरुवा सहमति उपलब्ध गराईदिनुहुन भन्ने व्यहोरा र आवश्यक कागजात संलग्न गरिएको वन तथा वातावरण मन्त्रालयको मिति २०७९।२।९ गतेको पत्र।<br>  ४. निजामती सेवाको राष्ट्रिय नीतिको मस्यौदा उपर मिति २०७९।२।१० गते १०० बजे श्रीमान् सचिवज्यूको कार्यकक्षमा छलफल कार्यक्रम आयोजना गरिएकोले सहभागी हुनु हुन भन्ने व्यहोराको प्रशासन सुधार शाखाको पत्र। <br> ५. संघीय तथा प्रादेशिक कर्मचारी प्रशासन शाखामा कार्यरत नायव सुब्बा श्री किशोर नेपालले घरमा आवश्यक काम परेको भन्ने कारण देखाई मिति २०७९।२।११ देखी २।१३ सम्म घर बिदा माग गर्नुभएको बिदा माग फाराम। <br> ६. भूमीसुधार तथा मालपोत कार्यालय भक्तपुरमा कार्यरत खरिदार केशव कार्कीले भूमीसुधार तथा मालपोत कार्यालय ललितपुरमा खरिदार पद रिक्त रहेकोले उक्त पदमा सरुवा गरिपाउँ भनी मिति २०७९।२१९ गते माननीय मन्त्रीज्यूलाई सम्बोधन गरी दिनुभएको निवेदन। माननीय मन्त्रीज्यू बाट तुरुन्त सरुवा गर्ने भन्ने तोक आदेश समेत भएको। <br> ७. नेपाल प्रशासनिक प्रशिक्षण प्रतिष्ठानले मिति २०७१।२।११ देखी २।१५ गतेसम्म सरुवा व्यवस्थापन सम्बन्धी तालिम कार्यक्रम आयोजना गरेको ले उक्त तालिममा सहभागी हुनुहुन भन्ने व्यहोराको शाखा प्रमुखलाई सम्बोधन गरिएको जनशक्ति व्यवस्थापन शाखाको पत्र।<br>८. शाखाको कामको सिलसिलामा बिहान, बेलुकीको खाना र खाजा खर्च वापतको रु १,६५,००० को बिल भुक्तानीका लागि प्राप्त भएको।<br>९. बिभीन्न मन्त्रालय अन्र्तगत कार्यरत २३ जना नायव सुब्बा र खरिदारहरुको अन्तरमन्त्रालय सरुवाका लागि शाखा  अधिकृतबाट मिति २०७९।२।९ गतेको टिप्पणी सहितको फाईल पेश भएको। <br> १०. त्यस शाखाबाट २०७९ बैशाख १ गतेदेखी बैशाख मसान्तसम्म भएका सरुवा काज, कामकाजको विवरण ३ दिनभित्र यस शाखामा उपलब्ध गराईदिनुहुन भन्ने व्यहोराको मिति २०७९।२।१० गतेको सूचना प्रबिधी शाखाबाट प्राप्त पत्र।<br> </td><td>nil</td><td>nil</td><td>nil</td><td>/exercise/<br></td></tr>
+  <tr><td>06</td><td><b><u>प्रश्न नं. ६- पत्रको मजबुनः </u></b> तपाई <u> कालीकोट जिल्लाको प्रमुख जिल्ला अधिकारी </u> हुनुहन्छ। जिल्ला प्रशासन कार्यालयमा २ जना सहायक प्र.जि.अ रहेका छन् र ६ वटा फाँट (प्रशासन फाँट, मुद्दा फाँट, नागरिकता फाँट, राहदानी फाँट, लेखा फाँट र शान्ति सरक्षा समन्वय फाँट) रहेका छन्। प्रत्येक फाँटमा १/१ जना ना.सु को दरबन्दी रहेको छ। कार्यालय ब्यवस्थापनमा सहयोग हुनेगरी सूचना प्रविधिको प्रयोग गर्न शुरु भएको छ। कार्यालयमा भ्रमण खर्च न्यून भएको एवं कार्यालय सन्चालन खर्च कम भएको लेखा फाँटले जनाएको छ। प्रजिअको मुख्य कार्य जिल्लामा शान्ति सरक्षा अमनचयन कायम गर्ने, जिल्ला स्थित कर्मचारीको अभिभावकको रुपमा कार्य गर्ने एवं जिल्ला स्थित प्रहरी प्रमुखको कार्यसम्पादन मूल्यांकन गर्ने समेत रहेको छ। त्यसको अलावा संघीय कार्यालयको सम्पर्क सुत्र र विपद व्यवस्थापनको कार्यमा समेत भूमिका रहेको छ। कार्यालयको भौतिक संरचना कमजोर रहेको एवं सेवाग्राहीलाई बस्ने सुविधा समेत छैन तसर्थ कार्यालयमा सधैजसो भिडभाड देखिन्छ। कार्यालयमा २ वटा गाडी छन्। एउटा प्रजिअले प्रयोग गर्ने र अर्को जगेडामा राखिएको छ।<br> १. नरहरीनाथ गाउँपालिकाका अमर व शाही कतारमा वर्घटनामा परी मृत्य भएको र उक्त शब सम्बन्धित परिवारलाई पुरयाउन भनी वैदेशिक रोजगार प्रबर्द्धन बोर्डको पत्र।<br> २. कर्णाली राजमार्गको पिलिमा एउटा ट्याक्टर दुर्घटना भएको र एकजनाको घटनास्थलमै मृत्य भएको र २ जना गम्भीर घाइते भएको जिप्रकाबाट प्राप्त नोट।<br> ३. नेपाल सरकारका युवा तथा खेलकद मन्त्री क्रिकेट मैदान निर्माणार्थ उद्घाटन गर्न जुम्ला जाने क्रममा आज कालीकोट आउने।<br> ४. कर्णाली प्रदेशका मुख्यमन्त्री जिल्लाको तिला नदीमा बनेको पुल अनुगमन गर्न आउने हुनुभएको छ।<br> ५. मन्त्रालयबाट २ जना इन्जिनियरहरु नागरिकताको अनलाइन सिस्टम जडान गर्न आएका छन्। उक्त जडान पश्चात संचालन गर्ने तालिम प्रदान गर्ने र बेलुका नै सुर्खेत फर्कने कार्यक्रम रहेको छ।<br> ६. जिल्ला खाद्य कार्यालयमा लाइनमा बसेका सेवाग्राही बीच झडप भईरहेको सूचना प्रहरीबाट प्राप्त।<br> ७. जिल्लाको कटी भन्ने स्थानमा आतंकवादी समूहको गतिविधि भएको सूचना प्राप्त भएको तर फोनमा टिप्दा आवाज राम्रो नसुनिएको मेमो।<br> ८. कर्णाली सुधार मन्चको आज साधारणसभा छ। उक्त सभामा प्रमख अतिथिको रूपमा भाग लिन १५ दिन अघि नै कन्फर्म गरिएको।<br> कर्मचारी मिलन केन्द्रले नयाँ आएका जिल्ला समन्वय अधिकारीलाई स्वागत गर्ने कार्यक्रममा निमन्त्रणा प्राप्त भएको।<br> १०. मान्म न.पा. ८ स्थित कि.नं.३१० को जग्गा हरीबहादरले अतिक्रमण गरेको र सो हटाउन सहयोग गरिदिन न.पा ले अनरोध गरेको पत्र।</td><td>nil</td><td>nil</td><td>nil</td><td>/exercise/<br></td></tr>
+  <tr><td>07</td><td><b><u>प्रश्न नं. ७-  पत्रको मजबुनः </u></b> तपाईलाई <u>संघीय मामिला तथा सामान्य प्रशासन मन्त्रालयले वीरेन्द्रनगर नगरपालिका सुर्खेतमा प्रमुख प्रशासकीय अधिकृत</u>मा  सरुवा गरी पदस्थापना समेत गरेको छ। तपाई आज मिति २०७८८।२० गते कार्यालयमा हाजीर हुनुभएको छ। तपाई मातहत प्रशासन शाखा, लेखा शाखा, योजना शाखा लगागत अन्य शाखाहरु समेत रहेका छन्। योजना शाखामा कर्मचारी रिक्त रहेका कारण प्रशासन शाखाको ना.सु. ले नै सो जिम्मेवारी निर्वाह गर्दै आएका छन्। नगरपालिकाका १६ वडा मध्ये ४ वटा वडामा वडा सचिव रिक्त रहेको छ। आजैखि तपाईले आफ्नो जिम्मेवारी सम्हाल्दै गर्दा तपाइको टेबलमा निम्न १० वटा कामहरु छन्। ती कामहरुलाई तरुन्त, अति जरुरी, जरुरी र सामान्यमा वर्गीकरण गरी ती काम सम्पादन गर्दा अपनाउनुपर्ने प्रक्रिया र प्राथमिकीकरण गर्नुपर्ने कारण समेत उल्लेख गर्नहोस्। <br><br> १.सं.मा.तथा सा.प्र. मन्त्रालयले पहिलो चौमासिक भित्र सम्पन्न भएका योजनाको विवरण १५ दिन भित्र मन्त्रालयमा पठाउन लेखी आएको पत्र मिति २०७७।८।१० कार्यालयमा दर्ता मिति २०७७।८।१८ <br> २.ढोडेखाली खानेपानी आयोजनाको उपभोक्ता समिति गठनमा एउटा राजनीतिक दलले मात्र मनोमानी गरेको हुनाले कारवाही गरी सो उपभोक्ता समिति खारेज गरीपाउँ भनी असन्तुष्ट समूहले १५० जना उपभोक्ताहरुको हस्ताक्षर सहित ज्ञापनपत्र बुझाएको। नगरप्रमुखले ३ दिनभित्र सत्यतथ्य पत्ता लगाई आवश्यक कारवाही गर्नु भनी २०७७।८।१९ मा तोक लगाएको।<br> ३.प्रदेशको सामाजिक विकास मन्त्रालयबाट न.पा.मा वितरण गरिएको राहतको विवरण ७ दिनभित्र पठाउन अनरोध गर्दै इमेल प्राप्त भएको मिति २०७७।८।१७ र सोही मितिमा दर्ता भएको।<br> ४. जिल्ला प्रशासन कार्यालयबाट २०७७।८।२० गते दिउसो २ बजे बजार व्यवस्थापन सम्बन्धी बैठकमा अनिवार्य उपस्थित हुन पत्र पठाएको।<br> ५. नेपाल रेडक्रस सोसाइटी सुर्खेत शाखाद्वारा २०७७।८।२१ गते न.पा. क्षेत्रमा आयोजना गरिएको जनचेतना सम्बन्धी कार्यक्रममा प्रमुख अतिथिको रुपमा उपस्थित हुन अनुरोध गर्दै लेखीआएको पत्र दर्ता मिति २०७७।८।२० <br> ६. प्रदेशको उद्योग, वन तथा पर्यटन मन्त्रालयले आगामी आर्थिक वर्षमा नगरपालिका क्षेत्रभित्र पर्यटकीय पूर्वाधार विकासका लागि २ करोड सम्मको योजना मंसीर मसान्तसम्म पठाउन अनरोध गर्दै लेखी आएको पत्र।<br> ७. काकालाई हृदयघात भएर देउती मेडिकल कलेजमा भर्ना गरिएको हुनाले आवश्यक रकम सहित उपस्थित हुन भाइले फोन गरेको।<br> ८. न्यायिक समितिको बैठक विगत २ महिना देखि बस्न नसकेको कारणले ४० वटा उजुरीहरु फछ्यौट हुन नसकेको। उपप्रमखले २०७७।८।२० गते दिनको ४ बजे बैठक राख्नुभएको छ।<br> ९. आगामी वर्षको योजना तर्जुमाको लागि वडास्तरीय बैठक मंसीर मसान्त भित्र सक्ने गरी वार्षिक नीति तथा कार्यक्रममा उल्लेख भएको भएता पनि योजना शाखा रिक्त रहेको कारणले हालसम्म एउटा पनि वडास्तरीय बैठक बस्न नसकेको जानकारी प्राप्त भएको।<br> १०. वडा नं ५ को ३ किलोमिटर सडक कालोपत्रे भइसकेको हुनाले सो को अनुगमन गरी भुक्तानी प्रक्रिया अगाडि बढाइदिन अनुरोध गर्दै २०७७ ८।१ मा निवेदन दर्ता गरेपनि हालसम्म पनि अनुगमन हुन नसकेको।<br> </td><td>nil</td><td>nil</td><td>nil</td><td>/exercise/<br></td></tr>
+<tr><td>08</td><td><b><u> प्रश्न नं. ८ - पत्रको मजबुनः </u></b>तपाई ललितपुर जिल्ला अदालतको श्रेस्तेदार हुनुहुन्छ। तपाई आज मिति २०८०।१।८  विहान १०ः०० बजे कार्यलय पुग्दा तपाईको टेबलमा निम्न १० वटा पत्रहरू छन्। <br><br> १. १० बजे गोलामा सहभागी हुनुपर्ने, कजलिष्ट प्रकाशन गर्नुपर्ने<br> २. कर्मचारी मिटिङ (४ बजे)<br> ३. उच्च अदालत पाटनको निरीक्षणको जानकारी (११ बजे) ४. कर्मचारीले गैर कानूनी तरिकाले आर्थिक लाभ लिन खोजेको भनी सर्वोच्च अदालत, अनुगमन महाशाखाको फोन <br> ५. न्याय क्षेत्र समन्वय समितिको वैठक (१ बजे) ६. विवाह दर्ताको निवेदन लिई एक जोडि तपाईको कार्यकक्षमा उभिरहेका ७. जबरजस्ती करणी मुद्दामा पेशी हटाउनको निम्ति निवेदन आएको ८. तहसिलदारबाट लिलाम सम्बन्धी वैठक ९. सर्वोच्चबाट मास्केवारी पठाउने ताकेता पत्र<br>  १०. उच्च अदालतमा DCM सम्बन्धी प्रशिक्षण कार्यक्रम, प्रधानन्यायाधीश उपस्थित हुने <b><u> स्रोतः </u></b> लिलाधर सुवेदी सरले तयार गरेको खेस्रा कमलकान्त सर मार्फल प्राप्त  </td><td>nil</td><td></td><td></td><td>/exercise/</td></tr>
+  <tr><td>11</td><td><b><u> In Basket Exercise को Solution tips:</u></b> <br> 1. Justification को आधार संविधान, ऐन, कानून, नियमावलीलाई बनाउने। जस्तैः जि.अ. नि., स.अ. नि., उ.अ. नि. इत्यादि।<br> <b> 2. </b> बोधार्थ आउँदा अभिलेखीकरणको लागि पठाउने, <br> <b> 3. </b> अर्को शाखाको लागि बोधार्थ आयो भने <br> <b> (क) </b> सम्बन्धित शाखामा पठाउने,<br> <b> (ख) </b> छलफलको लागि बोलाउने<br> <b> (ग) </b> Subordinate को राय लिने<br> <b> 4. </b> अदालतमा अ.आ. छलफल, बन्दिप्रत्यक्षकीकरणको निवेदनमा बहसको लागि सूचना भएमा १ नं. प्राथमिकतामा राख्ने,<br> <br> <b> <u> अन्य आलु Points:<br>  </u>  </b> (१) आफ्नो तालुक पदीय/ मुख्य जिम्मेवारी भएकोले<br> (२) तालुक नियामक निकायको निर्देशन भएकोले<br> (३) तत्काल कार्यान्वयनमा लैजानुपर्ने भएकोले<br> (४) लामो प्रक्रियागत कार्यविधि, समय लाग्ने, पर्याप्त पूर्व तयारी आवश्यक भएकोले, High Ranking हुँदा,  कम समय /तयारी/ पूर्वतयारी गर्दा पनि हुने हुनाले (low priority हुँदा)  <br> (५) जोखिम न्यूनीकरण गर्न, नागरिकको जिउँधनको रक्षा गर्न, मानवीय/भौतिक क्षति/ हानी नोक्सानी हुन नदिन,<br> (६) Core function भएकाले <br> (७) विषयवस्तुको गाम्भीर्यता बढी भएकाले / समय कम भएकाले <br> (८) महत्वपूर्ण विषयमा नीतिगत निर्णय गर्नुपर्ने भएकाले <br> (९) अन्य महत्वपूर्ण कार्यमा केन्द्रीत रहनुपर्ने भएकोले <br> (१०) सूचना/तथ्याङ्क सङ्कलनमा  अधिक समय लाग्ने भएकाले<br> (११) पूर्वाधार/ सामाजिक/ सार्वजनिक महत्वको (PIL) विषय भएकोले <br> सार्वजनिक जवाफदेहिताको विषय भएकाले<br> (१३) कानूनी परिपालनाको सवाल भएकाले <br> (१४) Ethics/ Morality, पेशागत मर्यादा, आचरण, सदाचार, नैतिकताको विषय भएकाले<br> <br><b> <u> अलि कम औजिला बुँदाहरूः</u></b> <br>  <br> (१) तुलनात्मक रूपमा कम/ मध्यम महत्व जरूरीपनाको विषय भएकाले <br> (२) अति जरूरी नदेखिएकोले<br> (३) कम गाम्भीर्यताको विषय भएकोले<br> (४) मानवीय मूल्य, Organizational goal/ संवैधानिक लक्ष्य/उद्देश्य प्राप्तीमा सहयोगी हुने नदेखिएकाले<br> (५) समसामयिक महत्वको विषय नदेखिएकोले <br> <u>स्रोतः विवेक बराल सरको संकलन कमलकान्त सर मार्फत प्राप्त</u></td><td>nil</td><td>nil</td><td>nil</td><td>/justifications/key actions/</td></tr> 
+  <tr><td>12</td><td><b><u> Tips:</u></b> 1. कानूनी राय ७ दिनभित्र दिनुपर्ने<br> 2. सैद्धान्तिक सहमति र सैद्धान्तिक स्वीकृति फरक कुरा हुन्<br> 3. संविधान, कानून, नजिर र नेपाल पक्ष भएका अन्तराष्ट्रिय सन्धि सम्झौताको आधारमा...<br> 4. कानूनी रायको लागि Legal issue, format मिले नमिलेको, officer, उपसचिव हुँदै सहसचिवसम्म forward हुन्छ, officer ले cover letter बनाउने र sign गर्ने कार्य गर्छ, राय सबैले लेखेतापनि cover letter officer ले बनाउँछ <br> 5. रितपूर्वक छ, छैन जाँच्ने, रितपूर्वक नभए रितपूर्वक पेश गर्नु भनी फाइल फिर्ता गर्ने, कानूनी राय माग्ने र दिने दुवै निकायको क्षेत्राधिकार भए नभएको एकीन गर्ने, राय माग गरेको विषयमा संविधान, कानून, नजिर, न्यायका मान्य सिद्धान्तका आधारमा नेपाल पक्ष भएका अन्तराष्ट्रिय सन्धी सम्झौताको  आधारमा तोकिएको ढाँचामा  तोकिएको समयभित्र उपलब्ध गराउने,  <br> <u>Justification:  </u> Core function रहेको, कानूनी जटिलताको निराकरणको निम्ति सहयोगी, कानूनी राज्यको अवधारणासँग सम्बन्धीत<br> <br> <b><u> लिखित जवाफः</u></b> विपक्षी रहे नभएको एकीन गर्ने,म्याद बुझ्ने, लिखित जवाफको ३ कपी तयार गर्ने, सचिवज्यूबाट sign गराई म.न्य.का मार्फत अदालतमा पेश गर्ने, समयमा पुगे नपुगेको एकीन गर्ने, <br> <u> Justification:</u> अदालतको काम कारवाही प्रतिको संवेदनशीलता, Core function, Deadline (समयसीमा) आजै रहेको, समग्र न्यायप्रणालीको आयाम, <br><br>   <b><u> O & M : </u></b> मन्त्रालय, कानून आयोग, न्याय सेवा तालिम केन्द्र, बेपत्ता आयोग, कानून किताब व्यवस्था समिति, <br> <b><u> पारस्परिक कानूनी साहयता(MLA) & Extradiction को differences: </u></b> <br> <b><u> सैद्धान्तिक सहमति र सैद्धान्तिक स्वीकृतिः </u></b> सैद्धान्तिक सहमति मन्त्रिपरिषदबाट लिइन्छ भने सैद्धान्तिक स्वीकृतिः.....<br> <b><u> आर्थिक विधेयकमा कानूनी राय आएमाः</u></b> यो urgent गर्नपर्ने प्रकृतिको हो किनभने यसमा कानूनले कानून नियन्त्रण गर्ने कुरा आऊँछ<br> <b><u> अध्यादेशको मस्यौदाः</u></b> कुनै सहमति दिने खालको हुन्छ भने कुनै आफैले मस्यौदा गर्नुपर्ने खालको हुन्छ, संविधानसँग नबाझिने हुनुपर्‍यो, संघीय ऐनसँग नबाझिने हुनुपर्यो, <b><u> तालिमा मनोनयनः</u></b> इच्छुक कर्मचारीहरूको विवरण सङ्कलन गर्न लगाउने( staff meeting गरेर हुन्छ वा सर्भे गरेर हुन्छ), अवसरको  समानुपातिक वितरण हुने गरी कर्मचारीहरूको छनौट गर्ने, तालिममा मनोनयन भएको पत्र प्रदान गर्ने, <br> <u> Justification: </u> जनशक्ति विकासँग सम्बन्धित, सीप विकास तथा क्षमता अभिवृद्धिसँग सम्बन्धित, उच्च मनोबल र उत्प्रेरणाबाट संस्थाको निर्दिष्ट उद्देश्य हासिल हुन गइ उत्पादकत्वसमेत बढ्न जाने [HRD, Capacity Building, Motivation and Productivity],<br> <b><u> विदाईको कार्यक्रमः</u></b> मायाको चिनो प्रदान, अनुभव सुन्ने (त्यो व्यक्ति Institutional Memory भएकाले), सबैले माला खादासहित ससम्मान विदाई गर्ने, <u> Justification: </u>   त्यो व्यक्ति Institutional Memory हो, Knowledge Transfer सँग सम्बन्धित, कर्मचारीको योगदानको सम्मान, कर्मचारीको उत्प्रेरणाको निम्ति संवेदनशील विषय पनि हो <br> <b><u> बैठकमा सहभागि हुन निमन्त्रणा भएमा</u></b> (प्रमुख अतिथि हो वा अतिथि छुट्याउने,), कार्यक्रमको Modality बारे जानकारी लिने, प्रमुख अतिथि भएमा आफ्नो भूमिका बारे एकिन हुने, मन्तव्यको लागि Key notes तयार गर्ने, कुरा सुन्ने, धारणा सुन्ने, वैठकको निर्णय Diary मा  टिप्ने र Higher Authority लाई Briefing गर्ने, <u> Justification: </u>   आफ्नो र आफ्नो कार्यालयको representation गराउने, Official Harmony, <br> <br> <b><u> बोधार्थ र कार्यार्थः</u></b>  बोधार्थ दिएमा अभिलेखीकरण गर्ने र कार्यार्थ दिएमा काम पनि गर्नुपर्ने<br> <br>  <b><u> कर्मचारीको सुत्केरी विदा सम्बन्धमाः</u></b>  निसेनि नियम ५९ मा छ, सम्बन्धित कार्यालय प्रमुख (नासु र शाअको हकमा) वा विभागीय प्रमुखले स्वीकृत गराउने (अन्यको हकमा),<br><br>  <b><u> घर विदा माग्न आएमाः</u></b><u> Justification:</u>   कर्मचारी कम भएर विदा नदिइएमा- विदा सहुलियत हो अधिकार होइन, निसेनि को नियम ७१,<br><br>   <b><u> सूचना माग गर्न आएमा</u></b> सूचना अधिकारी समक्ष पठाउने, अभिलेखीकरण गर्ने, १५ दिनभित्र सूचना उपलब्ध गराउने<br> </td><td>nil</td><td>nil</td><td>nil</td><td>nil</td></tr>
+  <tr><td>000</td><td>nil</td><td>nil</td><td>nil</td><td><b><u> Justification List:</u></b> 1. Sancity of life, liberty and property सँग सम्बन्धित<br> 2.Sancity of body सँग सम्बन्धित<br> 3.Sancity of Rights सँग सम्बन्धित<br> 4.Professionalism सँग सम्बन्धित<br> 5.Higher Authority को Order<br> 6. Core Function सँग सम्बन्धित<br> 7.प्रकरण नं. ५ भन्दा महत्वपूर्ण भएकोले<br> प्रकरण नं. ४ पछि मात्र गर्न मिल्ने भएकोले<br> Integrity कुरा सन्निहित रहेकोले<br> Prosecutor is the first judge भन्ने धारणा रहेकोले<br> कानूनी दायित्वभित्र नपर्ने हुनाले<br> कानूनी दायित्व नभएकोले<br> सामाजिक उत्तरदायित्वको विषय भएकोले<br> बाँके जिल्ला अदालत नमुना सरकारी वकील कार्यालय भएको पेशी स्थगित गर्न नमिल्ने हुँदा<br> पूर्ण वैठकबाट निर्णय भएकोले<br> आन्तरिक काम कारवाहीलाई  प्रभावकारी बनाउने कुरासँग सम्बन्धित रहेकोले<br> issue को sensitivity गम्भीर भएकोले<br> Briefing गर्न जरूरी भएकोले<br> Official Core function भएकोले <br> TOR (Terms of Reference) भित्रको कार्य <br> भएकोले<br>  कानूनका विवादमा परेका बालबालिका भएकोले<br> पारिवारिक दायित्वको विषय भएकोले<br> तालुक निकायको निर्देशन भएकोले<br> विषयवस्तुको गाम्भीयता</td><td></td></tr>
+      <tr><td>001</td><td><b><u> पत्रको मजबुनः</u></b> अभियानको मुद्दा स्थगित गर्न निवेदन पर्नु</td><td>जरूरी</td><td><b><u> Key Action:</u></b> 1. स्थगितको आधार कारण हेर्ने<br> 2. स्थगित गर्न सकिने अपवादत्मक अवस्था भएमा निवेदन ग्रहण गर्ने नत्र भने इजलास समक्ष नै पेस गर्न अनुरोध गर्ने<br>  </td><td> <b><u> Justifications:</u></b> 1. अभियानको मुद्दा पेशीबाट नहट्ने भनी पूर्ण वैठकबाट निर्णय भएको<br> 2. अदालतको आन्तरिक काम कारवाहीलाई प्रभावकारी बनाउने कुरासँग सम्बन्धीत रहेको</td><td>/removing of a case from cause list/</td></tr>
+      <tr>
+        <td>002</td>
+        <td><b><u> पत्रको मजबुन: </u></b>निरीक्षण जानुपर्ने (सर्वोच्चबाट उच्च, ३ दिन पछि)</td>
+        <td>जरूरी</td>
+        <td><b><u> Key Actions:</u></b>1. निरीक्षण पुस्तिका download गरी अध्ययन गर्ने<br> </td>
+        <td></td>
+        <td>/supervision/</td>
+      </tr>
+      <tr>
+        <td>003</td>
+        <td><b><u> पत्रको मजबुन: </u></b> अन्तरिम आदेश छलफलको निम्ति मिसिल पठाइदिने (उ.अ.पाटनको पत्र)</td>
+        <td>अति जरूरी</td>
+        <td><b><u> Key Actions:</u></b> 1. उतैबाट का.स. पठाइदिन भनी रजिष्ट्रारलाई टेलिफोनबाट सम्पर्क गर्ने <br> 2. मिसिल
+          खोज्न फाँटमा कार्यरत नायव सुब्बालाई जिम्मा दिने<br> 3. उ.अ. पाटनबाट आएको का.स.लाई मिसिल जिम्मा लगाई पठाउने
+        </td>
+        <td><b><u> Justifications:</u></b> 1. अ.आ. छलफलको कार्य अदालतको core function भएको<br> 2. अपूरणीय क्षतिसँग सम्बन्धित रहेको</td>
+        <td>/demand for misil (file)/</td>
+      </tr>
+      <tr>
+        <td>004</td>
+        <td><b><u> पत्रको मजबुनः</u></b>Higher Authority आउन लागेको </td>
+        <td>जरूरी</td>
+        <td><b><u> Key Actions:</u></b> फुलमाला तयार मार्न माली (का.स.) लाई जिम्मा दिने 2. खादाको व्यवस्था गर्न store शाखालाई
+          जिम्मा दिने<br> 3.फुलमाला र खादा सहित शा.अ. लाई एयरपोर्ट पठाउने<br> 4.1आफु कार्यालयभन्दा १ कि.मी. पर वीचमा
+          receive गर्न जाने<br> 4.2 मान्यसँग आउने सहयोगीलाई आफू आउन नसक्ने असमर्थताको जानकारी गराउने</td>
+        <td><b><u> Justifications:</u></b> 1. आफू उपस्थित हुन जाँदा official core function छुट्न जाने<br> </td>
+        <td>/guest reception/</td>
+      </tr>
+      <tr>
+        <td>005</td>
+        <td><b><u> पत्रको मजबुनः</u></b> थुनछेक बहसको निम्ति उपस्थित हुने</td>
+        <td>अति जरूरी</td>
+        <td><b><u> Key Actions:</u></b> 1. मिसिल ready गर्न का.स.लाई जिम्मा दिने<br> 2.तत्काल प्राप्त प्रमाणको विश्लेषण गरी
+          Keypoint तयार गर्ने<br> मिसिल लिई थुनछेक बहसको लागि अदालतमा उपस्थित हुने<br> </td>
+        <td><b><u> Justifications:</u></b> 1. आफ्नो कार्यालयको core function सँग सम्बन्धित<br> 2. आफ्नो जिम्मेवारीको विषय</td>
+        <td>/bail hearing/</td>
+      </tr>
+      <tr>
+        <td>006</td>
+        <td><b><u> पत्रको मजबुन: </u></b>1. Harrasement भयो भन्दै एउटा महिला कर्मचारी complain गर्न आउनु</td>
+        <td>तुरन्तै</td>
+        <td> <b><u> Key Actions:</u></b> 1. प्रशासनमा रहेका शा.अ. लाई सत्य तथ्य बुझ्न लगाने<br> 2.दोषी ठहरीए आवश्यक कारवाही
+          गर्ने प्रतिबद्धता जाहेर गर्ने<br> २ः०० बजे भित्र नतिजा आउने गरी कार्य गर्छु, तपाई अहिले आफ्नो नियमित
+          जिम्मेवारीमा फर्कनु भनी भन्छु</td>
+        <td><b><u> Justifications:</u></b> 1. कार्य वातावरणसँग सम्बन्धित<br> 2. कार्यालयको अरू नियमित कार्यहरूलाई असर पुर्याउन सक्ने प्रकृतिको issue
+          रहेको</td>
+        <td>/complains/</td>
+      </tr>
+      <tr>
+        <td>007</td>
+        <td><b><u> पत्रको मजबुनः </u></b> अभियोगपत्र तयार गर्नुपर्ने (अन्तिम म्याद)</td>
+        <td>तुरून्तै</td>
+        <td><b><u> Key Actions:</u></b> 1.१ सहायक जिल्ला न्यायाधिवक्तालाई जिम्मा लगाउने र १ः०० बजे भित्र रूजु गराउन ल्याई
+          पुर्‍याउन भन्ने<br> 1.2 कम्प्युटर अपरेटरलाई अरू खण्ड तयार गर्न लगाउने र अभियोग खण्ड आफै तयार गर्ने<br>2.
+          अभियोगपत्रमा दस्तखत गरी दर्ता गराउनको निम्ति का.स. लाई जिम्मा दिने <br> अभियगपत्रको विद्युतीय पत्र भने मेल
+          मार्फत अदालतमा पठाउन प्रशासन शाखालाई जिम्मा दिने</td>
+        <td><b><u> Justifications:</u></b> 1. अन्तिम म्याद रहेकोले तत्काल गर्नुपर्ने <br> 2. ढिलाई भएमा मुद्दा दर्ताको हदम्याद समाप्त हुन सक्ने<br> 3.
+          कार्यालयको core function सँग सम्बन्धित</td>
+        <td>/charge sheet preparation/</td>
+      </tr>
+    </table>
+  </section>
+</body>
+<footer>
+  <a id="BOTTOM"></a></p>
+  <input type="text" id="search" onkeyup="searchFunction()"
+    placeholder="Search...हरिनाम हरिनाम हरिनामैव केवलम् कलो नास्तैव नास्तैव नास्तैव गतिरन्यथा">
+  <p id="developedby"><u><b>Developed By:</b></u><br> Debaka Timilsina (M.A, M.Ed; LL.B) <br> Shiva Prasad
+    Acharya
+    (M.Sc.; LL.M)<br> श्री अक्षयतृतीया, २०८०
+  <div class="link-container">
+    <a href="#TOP">&#x25B2;</a>
+    <a href="#MIDDLE">X&#772;</a>
+    <a href="#BOTTOM">&#x25BC;</a>
+  </div>
+</footer>
+</html>
+<!--basic file created on 9 May 2023-->
+<!--.-->
